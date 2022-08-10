@@ -6,7 +6,7 @@ import _ "github.com/go-sql-driver/mysql"
 var db *gorm.DB
 
 func Connect() {
-	d, err := gorm.Open("mysql", "rosebash:rosebash@tcp(127.0.0.1:3306)/simplerest?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "rosebash:password@tcp(127.0.0.1:3306)/simplerest?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
